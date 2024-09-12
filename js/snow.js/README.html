@@ -1,0 +1,65 @@
+<h1 id="snow-js"><a href="#snow-js" class="headerlink" title="snow.js"></a>snow.js</h1><p><code>Snow.js</code> is a stand alone javascript library that helps “cool down” the web with a beautiful snowfall. </p>
+<h3 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h3><p><code>npm install snowfall.js</code></p>
+<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><p>The setup to run <code>snow.js</code> is fairly simple. You will have to create a new instance of <code>Snow</code>, and pass it an element id that you want to encapsulate the snowfall.</p>
+<pre><code class="html">&lt;div id=&quot;snow&quot;&gt;&lt;/div&gt;
+
+&lt;script type=&quot;module&quot;&gt;
+//import the Snow module
+import * as Snow from &#39;/node_modules/snowfall.js/snow.js&#39;
+
+// Snow script included on the page, already.
+window.onload = function () {
+    var snow = new Snow.default({
+        id: &#39;snow&#39;
+    });
+
+    //Can run the snowfall by calling:
+    snow.start();
+}
+&lt;/script&gt;
+</code></pre>
+<p>There are also optional elements that you can pass to customize the snowfall….</p>
+<h3 id="Themes"><a href="#Themes" class="headerlink" title="Themes"></a>Themes</h3><p>The default theme displays the ordinary white snowflakes. However if you want something more bright then you can use the theme <code>colors</code>.</p>
+<pre><code class="html">&lt;script type = &quot;module&quot;&gt;
+window.onload = function () {
+    var snow = new Snow.default({
+        id: &#39;snow&#39;,
+        theme: &#39;colors&#39;
+    });
+}
+&lt;/script&gt;
+</code></pre>
+<p>If blue is your favorite color, you can use the theme <code>blues</code>!</p>
+<p>There are also the themes: <code>berry</code>, <code>pastel</code>, and <code>purple</code> to help your snowfall be a little more unique.</p>
+<h3 id="Snowflake-Size"><a href="#Snowflake-Size" class="headerlink" title="Snowflake Size"></a>Snowflake Size</h3><p>If you want to change the range of the snowflake sizes, then you can pass a min and max size element:</p>
+<pre><code class="html">&lt;script type = &quot;module&quot;&gt;
+window.onload = function () {
+    var snow = new Snow.default({
+        id: &#39;snow&#39;,
+        theme: &#39;colors&#39;,
+        min_size: 3,
+        max_size: 300
+    });
+}
+&lt;/script&gt;
+</code></pre>
+<p>For reference the default range is a min size of 2 and a max size of 7.</p>
+<h3 id="Toggle-Snowfall"><a href="#Toggle-Snowfall" class="headerlink" title="Toggle Snowfall"></a>Toggle Snowfall</h3><p>Maybe you do not want snowfall on your website 24&#x2F;7? In that case, you can stop the snowfall with <code>snow.stop()</code> and you can toggle the snowfall with <code>snow.toggle()</code>. </p>
+<p>The toggle feature can be good, for example, if you want the user to be able to switch back and forth between snow and no snow by a mouse click as seen with the code…</p>
+<pre><code class="html">&lt;script type=&quot;module&quot;&gt;
+window.onload = function () {
+    //create new snow
+    var snow = new Snow.default({
+        id: &#39;snow&#39;,
+        theme: &#39;berry&#39;,
+        min_size: 1,
+        max_size: 5
+    });
+    snow.start();
+
+    document.querySelector(&quot;body&quot;).onclick = function () {
+        snow.toggle();
+    }
+}
+&lt;/script&gt;
+</code></pre>
