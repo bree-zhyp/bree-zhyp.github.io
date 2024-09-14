@@ -485,23 +485,25 @@
   <swiper v-cloak ref="mySwiper" :options="swiperOptions" @slideChangeTransitionEnd="slideChangeTransitionEnd">
     
       <swiper-slide>
-        <div class="item swiper-lazy" data-background="https://pic1.zhimg.com/v2-af3ccef61cf58b1a70765747cc1bbeac_b.jpg" style="background-size: 300000px; 
+        <div class="item swiper-lazy" data-background="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" style="background-size: 300000px; 
           background-position: left center;" style="position: relative;">
           <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
             <div class="flag">
               
-              <div class="img-mask swiper-lazy swiper-default-bgImg" data-background="https://pic1.zhimg.com/v2-af3ccef61cf58b1a70765747cc1bbeac_b.jpg" style="height: 100%; background-size: cover; 
+              <div class="img-mask swiper-lazy swiper-default-bgImg" data-background="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" style="height: 100%; background-size: cover; 
                 background-position: center center;">
                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>   
               </div>
               <div class="flag-text">
                 <div class="flag-text-content">
-                  <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">青墨书晚风</div>
+                  <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">小风的个人博客主页</div>
                   
                       <div class="excerpt ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"></div>
                     
                 </div>
                 <div style="display: flex;" class="flag-text-btns">
+                  
+                    <div class="ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/about" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">我的信息</a></div>
                   
                   
                 </div>
@@ -1154,10 +1156,44 @@
         :data="listData"
         :class-option="classOption"
         class="warp"
-        style="height: 0px"
+        style="height: 60px"
       >
         <ul class="index-notice-content__ul">
           
+          
+            <li>
+              
+                <div class="index-notice-content__title">
+                  
+                    <a href="/archives" title="#新增 博客正式启用啦" style="color:red">
+                      #新增 博客正式启用啦
+                    </a>
+                  
+                </div>
+                
+                  <div class="index-notice-content__date" style="color:red">
+                    2024-09-13
+                  </div>
+                
+              
+            </li>
+          
+            <li>
+              
+                <div class="index-notice-content__title">
+                  
+                    <a target="_blank" rel="noopener" href="http://baidu.com" title="#新增 评论功能" style="color:black">
+                      #新增 评论功能
+                    </a>
+                  
+                </div>
+                
+                  <div class="index-notice-content__date" style="color:black">
+                    2021-04-28
+                  </div>
+                
+              
+            </li>
            
         </ul>
       </vue-seamless-scroll>
@@ -1172,7 +1208,7 @@
 <script>
   var seamless = JSON.parse('false');
   seamless = seamless ? 0 : 30;
-  var listData = '' || '';
+  var listData = '[object Object],[object Object]' || '';
   listData = listData.split(',');
   var vm = new Vue({
     el: '#appIndexNotice',
@@ -1205,8 +1241,6 @@
 <div class="topArticle reveal">
 	<h3><i class="fas fa-thumbs-o-up" aria-hidden="true"></i>Recommend Articles</h3>
 	<div class="articles">
-		
-			
 		
 			
 		
@@ -1251,7 +1285,9 @@
             </a>
           </div>
           <div class="post-content">
-            hello
+            你好，这是一个测试页面
+测试一下博客功能创建一个推文1hexo new &#x27;lalala&#x27;
+
           </div>
         </div>
         <div class="post-more">
@@ -1270,65 +1306,6 @@
   
     
     <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2024-09-11</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2024/09/11/test2/">test2</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">test</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/blog1/">blog1</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2024/09/11/test2/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" class="lazyload placeholder" data-srcset="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            1. This is a blog Test
-First
-Second
-
-
-2. Show Text
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2024/09/11/test2/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2024/09/11/test2/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" class="lazyload placeholder" data-srcset="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
       <div class="post-main">
         <div class="post-info">
           <div class="post-time">
@@ -1361,7 +1338,7 @@ Second
         </div>
         <div class="post-more">
           <a href="/2024/09/11/hello-world/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
@@ -1458,45 +1435,10 @@ Second
     
       
         
-    <section class="widget side_category">
-      
-  <header>
-    
-      <a style="color: " href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-      <div class='content'>
-        <ul class="entry navigation">
-          
-            <li><a class="flat-box"
-              title="/categories/blog1/" href="/categories/blog1/"
-              id="categoriesblog1"
-              ><div class='name'>blog1</div><div class='badge'>(1)</div></a></li>
-          
-        </ul>
-      </div>
-    </section>
-  
   
       
       
         
-<section class="widget side_tagcloud">
-    
-  <header>
-    
-      <a style="color: " href='/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-    <a href="/tags/test/" style="font-size: 14px; color: #999">test</a>
-    </div>
-</section>
-
   
       
       
@@ -1542,27 +1484,6 @@ Second
             
 
             <div class="post-img-box">
-              <a href="/2024/09/11/test2/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" class="lazyload placeholder" data-srcset="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                
-                  <span class="post-date">09-11</span>
-                
-              </div>
-              <a class="post-title" href="/2024/09/11/test2/">test2</a>
-            </div>
-          </div>
-        
-          <div class="aside-list-item">
-            
-            
-            
-
-            <div class="post-img-box">
               <a href="/2024/09/11/hello-world/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic3.zhimg.com/80/v2-5f7cb7e900b9dcf5354c3d4d2c5cc3c2_1440w.webp" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/80/v2-5f7cb7e900b9dcf5354c3d4d2c5cc3c2_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
@@ -1585,7 +1506,7 @@ Second
       
   <section class="widget side_archives">
     
-    <header><a style="color: red" href='/archives/'><i class="fas fa-archive fa-fw" aria-hidden="true"></i><span class='name'>归档</span></a></header><div class="content"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">September 2024</span><span class="card-archive-list-count">3</span></a></li></ul></div>
+    <header><a style="color: red" href='/archives/'><i class="fas fa-archive fa-fw" aria-hidden="true"></i><span class='name'>归档</span></a></header><div class="content"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">September 2024</span><span class="card-archive-list-count">2</span></a></li></ul></div>
   </section>
 
       <section class="widget side_webinfo">
@@ -1602,7 +1523,7 @@ Second
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>3 篇</div>
+          <div>2 篇</div>
         </div>
       
 
@@ -1645,8 +1566,8 @@ Second
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Fri Sep 13 2024 15:28:24 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2024-09-13 日</div>
+            <div id="last-update" style="display: none;">Sat Sep 14 2024 09:46:17 GMT+0800 (中国标准时间)</div>
+            <div id="last-update-show">2024-09-14 日</div>
           
         </div>
         
@@ -1696,7 +1617,7 @@ Second
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2024-09-13 日';
+            document.getElementById('last-update-show').innerHTML = '2024-09-14 日';
           }
         </script>
         
@@ -1711,16 +1632,6 @@ Second
 </div>
 <!-- 花瓣和雪花飘落 -->
 <!-- 雪花和花瓣特效 -->
-
-  
-    <script defer type="text/javascript">
-      //只在桌面版网页启用特效
-      var windowWidth = $(window).width();
-      if (windowWidth > 768) {
-        loadScript('/js/falling/snow.js');
-      }
-    </script>
-  
 
 
 
@@ -2438,7 +2349,7 @@ Second
       utterances.async = true;
       utterances.setAttribute('issue-term', 'pathname')
       utterances.setAttribute('theme', utteranceComment.Theme)
-      utterances.setAttribute('repo', '')
+      utterances.setAttribute('repo', 'bree-zhyp/bree-zhyp.github.io')
       utterances.crossorigin = 'anonymous';
       utterances.src = 'https://utteranc.es/client.js';
       // content 是要插入评论的地方
@@ -2632,5 +2543,5 @@ Second
 
 
 
-  </body>
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
