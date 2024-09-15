@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>【Leetcode刷题笔记】 哈希 | 小风的个人博客主页</title>
+  <title>机器人自建模 | 小风的个人博客主页</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/edge.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -506,21 +506,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp')">
+  background-position: center center;position: relative;background-image:url('https://pic4.zhimg.com/80/v2-83ea273b88e119d9615aed0d89aad4ab_1440w.webp')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        【Leetcode刷题笔记】 哈希
+        机器人自建模
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> Published in：2024-09-14 |
+          <i class="fas fa-calendar"></i> Published in：2024-09-15 |
         </span>
       
 
@@ -544,14 +544,23 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        
+        <h1 id="On-the-origins-of-self-modeling"><a href="#On-the-origins-of-self-modeling" class="headerlink" title="On the origins of self-modeling"></a>On the origins of self-modeling</h1><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>自建模是指智能体(如动物或机器)学习创建自身动态预测模型的过程。一旦获取，这个自模型就可以允许智能体使用自我模型在内部计划和评估各种潜在的行为，而不是使用昂贵的物理实验。与direct learning baseline相比，机器人的自由度数量与自建模的附加价值之间存在相关性。</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>采样效率是一个自我模型可以帮助解决的问题，因为一旦获得，自我模型提供了一个内部的代理，使用RL代理的输出来预测未来的状态，从而取代了在现实中进行大量测试的需要。</p>
+<p>对于相同的数据量，自模型以一种比无模型强化学习更有用和高效的方式捕获信息。</p>
+<p>自建模和传统的强化学习都使用数据来训练预测动态模型， 但它们使用数据的方式截然不同。 </p>
+<p>与RL使用数据在组合统计模型中对自我和任务进行建模不同，自建模以一种更与任务无关、 可重用和高效的方式分离自我。</p>
+<h2 id="Ask-Answer"><a href="#Ask-Answer" class="headerlink" title="Ask &amp; Answer"></a>Ask &amp; Answer</h2><p>什么是自建模?</p>
+<p>是一种机器人考虑未来的行动序列的情况，而无须直接进行物理上的测试的模型，一般来说可以减少获取数据的成本。</p>
+<p>self-modeling RL 和 MFRL 的区别？</p>
+<p>文章对比了 self-modeling RL 和 MFRL 的效率，效率上是自建模的好。自建模和传统的强化学习都使用数据来训练预测动态模型，但它们使用数据的方式截然不同。与RL使用数据在组合统计模型中对自我和任务进行建模不同，自建模以一种更与任务无关、 可重用和高效的方式分离“自我”。 </p>
+
       </div>
       <div class="post-tags-categories">
         
         <div class="tags">
           
-            <a href="/tags/Leetcode%E5%88%B7%E9%A2%98/" class="">
-              Leetcode刷题
+            <a href="/tags/robot/" class="">
+              robot
             </a>
           
         </div>
@@ -565,7 +574,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>link:  </strong>
-    <a href="/2024/09/14/【Leetcode刷题笔记】哈希/" target="_blank" title="【Leetcode刷题笔记】 哈希">http://example.com/2024/09/14/【Leetcode刷题笔记】哈希/</a>
+    <a href="/2024/09/15/机器人自建模/" target="_blank" title="机器人自建模">http://example.com/2024/09/15/机器人自建模/</a>
     </li>
     <li class="post-copyright-license">
       <strong>Copyright notice:   </strong>
@@ -587,16 +596,17 @@
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://pic4.zhimg.com/80/v2-83ea273b88e119d9615aed0d89aad4ab_1440w.webp" class="lazyload placeholder" data-srcset="https://pic4.zhimg.com/80/v2-83ea273b88e119d9615aed0d89aad4ab_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+      <img class="lazyload lazyload placeholder" src="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
     </div>
-    <a href="/2024/09/15/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%87%AA%E5%BB%BA%E6%A8%A1/" class="post-nav-link">
+    <a href="/2024/09/15/Fully-body-visual-self-modeling-of-robot-morphologies/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> Prev:
-        <div class="title-text">机器人自建模</div>
+        <div class="title-text">Fully body visual self-modeling of robot morphologies</div>
       </div>
       
       <!-- <div class="content">
-        On the origins of self-modelingAbstract自建模是指智能体(如动物或机器)学习创建自
+        研究现状最近在完全数据驱动的自建模方面取得的进展，使机器能够直接从与任务无关的交互数据中学习自己的正向运动学。
+
       </div> -->
     </a>
   </div>
@@ -607,16 +617,15 @@
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://pic2.zhimg.com/80/v2-63bbdb5b76b8d349ad35ff4281efbd37_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-63bbdb5b76b8d349ad35ff4281efbd37_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2024/09/14/%E3%80%90Leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E3%80%91%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" class="post-nav-link">
+    <a href="/2024/09/14/%E3%80%90Leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E3%80%91%E5%93%88%E5%B8%8C/" class="post-nav-link">
       <div class="title">
         Next: <i class="fas fa-angle-right"></i>
-        <div class="title-text">【Leetcode刷题笔记】滑动窗口</div>
+        <div class="title-text">【Leetcode刷题笔记】 哈希</div>
       </div>
       <!-- <div class="content">
-        测试一下博客功能创建一个推文1hexo new &#x27;lalala&#x27;
-
+        
       </div> -->
     </a>
   </div>
@@ -838,7 +847,7 @@
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!--  -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#On-the-origins-of-self-modeling"><span class="toc-text">On the origins of self-modeling</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Abstract"><span class="toc-text">Abstract</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ask-Answer"><span class="toc-text">Ask &amp; Answer</span></a></li></ol></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
